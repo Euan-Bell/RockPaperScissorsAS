@@ -16,6 +16,7 @@ public class GameTest {
     public void before(){
         game = new Game();
     }
+
 //    @Test
 //    public void canGetPlayerChoice(){
 //        assertEquals(SelectionType.PAPER, game.playerChoice());

@@ -9,8 +9,8 @@ class Game {
 
 
     public String playGame(SelectionType playerPlay){
-//        String computerPlay = computerChoice[(int) (Math.random() * computerChoice.length)];
-        String computerPlay = "Rock";
+        String computerPlay = computerChoice[(int) (Math.random() * computerChoice.length)];
+//        String computerPlay = "Rock";
         if (playerPlay.toString() == computerPlay){return "Draw";}
         if (playerPlay.getLosingHand() == computerPlay){return "you win";}
         else return "computer wins";
