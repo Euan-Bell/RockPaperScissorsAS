@@ -5,14 +5,14 @@ import com.example.dunk.rockpaperscissors.enums.SelectionType;
 
 class Game {
 
-    String[] computerChoice =  new String[]{"Rock", "Paper", "Scissors"};
+    String[] computerChoice =  new String[]{"ROCK", "PAPER", "SCISSORS"};
 
 
     public String playGame(SelectionType playerPlay){
         String computerPlay = computerChoice[(int) (Math.random() * computerChoice.length)];
 //        String computerPlay = "Rock";
-        if (playerPlay.toString() == computerPlay){return "Draw";}
-        if (playerPlay.getLosingHand() == computerPlay){return "you win";}
-        else return "computer wins";
+        if (playerPlay.toString() == computerPlay) {return "Draw";}
+        else if (playerPlay.getLosingHand() == computerPlay) {return "you win";}
+        else return "computer wins with " + computerPlay;
     }
 }

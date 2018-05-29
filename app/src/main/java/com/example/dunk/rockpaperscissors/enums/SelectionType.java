@@ -2,9 +2,9 @@ package com.example.dunk.rockpaperscissors.enums;
 
 public enum SelectionType {
 
-    ROCK("Scissors"),
-    PAPER("Rock"),
-    SCISSORS("Paper");
+    ROCK("SCISSORS"),
+    PAPER("ROCK"),
+    SCISSORS("PAPER");
 
     private final String losingHand;
 

@@ -2,6 +2,10 @@ package com.example.dunk.rockpaperscissors;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.dunk.rockpaperscissors.enums.SelectionType;
 
@@ -27,17 +31,17 @@ public class GameActivity extends AppCompatActivity {
 
     public void onRockClicked(View view) {
         Game game = new Game();
-        game.playGame(SelectionType.ROCK);
+        result.setText(game.playGame(SelectionType.ROCK));
     }
 
     public void onPaperClicked(View view) {
         Game game = new Game();
-        game.playGame(SelectionType.PAPER);
+        result.setText(game.playGame(SelectionType.PAPER));
     }
 
     public void onScissorsClicked(View view) {
         Game game = new Game();
-        game.playGame(SelectionType.SCISSORS);
+        result.setText(game.playGame(SelectionType.SCISSORS));
     }
 
 }
